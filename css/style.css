@@ -34,23 +34,27 @@ header .MainCard {
 header .MainCard img {
     border: 5px solid #72ace7;
     margin-bottom: 20px;
+    font-size: 400px;
 }
 
 
 /* وضبط الهامش h1 تنسيقات الخط والمسافات في العنوان */
 
 header .MainCard h1 {
-    font-size: 36px;
+    font-size: 40px;
     line-height: 50px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     color: #f9f9f9;
+    font-weight: 450;
 }
 
 
 /* تنسيقات الخط المطبقة على المسمى الوظيفي */
 
 header .MainCard h1 span {
-    font-size: 24px;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 30px;
 }
 
 
@@ -108,8 +112,8 @@ header .MainCard>a {
 
 nav.navbar ul.navbar-nav li a.nav-link {
     color: #ffffff;
-    font-size: 14px;
-    line-height: 40px;
+    font-size: 18px;
+    line-height: 30px;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
     transition: all 0.5s ease;
@@ -250,10 +254,10 @@ section.licence ul.timeline li .time-box p {
 section.licence ul.timeline li .time-box:after {
     content: "";
     position: absolute;
-    top: 5%;
-    left: -10px;
-    width: 20px;
-    height: 20px;
+    top: -50px;
+    left: 50%;
+    width: 5px;
+    height: 110px;
     background-color: #ffffff;
     transform: rotate(45deg);
     border-left: 2px solid #f4f3f3;
@@ -293,14 +297,15 @@ section.licence ul.timeline li {
 
 section.licence ul.timeline li:before {
     content: "";
-    width: 10px;
-    height: 10px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     background-color: #196dd1;
     position: absolute;
-    top: 9%;
+    top: 12%;
     right: 50%;
-    margin-right: -5px;
+    margin-right: -1px;
+    left: 393px;
 }
 
 
@@ -384,8 +389,8 @@ section.statistics .overlay .stat .circle span {
     font-weight: bold;
     color: #0575e0;
     position: absolute;
-    top: 50px;
-    right: 50px;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -513,8 +518,8 @@ section.contacts .overlay {
 section.contacts .overlay .testimonials .title h3 {
     font-size: 30px;
     color: #ffffff;
-    margin-bottom: 27px;
-    line-height: 50px;
+    margin-bottom: 29px;
+    line-height: 40px;
 }
 
 
@@ -529,8 +534,8 @@ section.contacts .overlay .testimonials .slider {
 /* تحديد عرض ولون الخط دخل عارض الشرائح */
 
 section.contacts .overlay .testimonials .slider .carousel {
-    min-height: 250px;
     color: #b1b1b1;
+    min-height: 250px;
 }
 
 
@@ -539,7 +544,7 @@ section.contacts .overlay .testimonials .slider .carousel {
 section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption {
     background-color: #ffffff;
     width: 100%;
-    padding: 80px 70px 35px;
+    padding: 43px 60px 30px;
     right: 0;
     left: 0;
 }
@@ -548,7 +553,7 @@ section.contacts .overlay .testimonials .slider .carousel .carousel-item .carous
 /* تحديد ارتفاع عارض الشرائح */
 
 section.contacts .overlay .testimonials .slider .carousel .carousel-item {
-    min-height: 390px;
+    min-height: 345px;
 }
 
 
@@ -651,7 +656,7 @@ section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev
     top: 50%;
     bottom: auto;
     width: auto;
-    transform: translate(50%, -50%);
+    transform: translate(-50%, -50%);
     z-index: 10;
     /* bootstrap حتى يتناسب مع النسخة الاحدث من */
 }
@@ -670,7 +675,7 @@ section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev
 /* إلى منتصف عارض الشرائح prev إزاحة سهم */
 
 section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev {
-    transform: translate(-50%, -50%);
+    transform: translate(50%, -50%);
 }
 
 
@@ -922,5 +927,9 @@ section.contacts form .error {
     }
     section.licence ul.timeline:before {
         height: 90%;
+    }
+    section.statistics .circle span {
+        font-size: 25px;
+        transform: translate(-50%, -50%);
     }
 }
